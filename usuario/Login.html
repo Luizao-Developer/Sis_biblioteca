@@ -8,17 +8,24 @@
     <link rel="stylesheet" href="../CSSusuario/Login.css">
 </head>
 <body>
-    <form action="../controlUsuario/login.php" method="post">
-            <h1>L o g i n</h1>
+    <div class="container">
+        <h1>L o g i n</h1>
+        <form action="../controlUsuario/login.php" method="post">
+            
             <p>
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Insira seu email">
             </p>
             <p>
                 <label for="senha">Senha</label>
-                <input type="password" name="senha" id="senha">
+                <input type="password" name="senha" id="senha" placeholder="Insira sua senha">
             </p>
-            <input type="submit" value="Conectar">
+            <input type="submit" value="Entrar" name="entrar">
+            <p>
+                <input type="checkbox" name="lembrar" id="lembrar"> lembrar-me
+            </p>
     </form>
+    </div>
+    
 </body>
 </html>
