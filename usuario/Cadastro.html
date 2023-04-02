@@ -10,22 +10,22 @@
 <body>
     <div class="container">
         <h1>C a d a s t r o</h1>
-        <form action="../usuarioPHP/cadastro.php" method="post">
+        <form action="" method="post">
                 <p>
                     <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" placeholder="Insira seu nome">
+                    <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
                 </p>
                 <p>
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Insira um email válido">
+                    <input type="email" name="email" id="email" placeholder="Insira um email válido" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                 </p>
                 <p>
                     <label for="senha">Senha</label>
-                    <input type="password" name="senha" id="senha" placeholder="Insira sua senha">
+                    <input type="password" name="senha" id="senha" placeholder="Insira sua senha" required>
                 </p>
                 <p>
                     <label for="Repetir senha">Repetir senha</label>
-                    <input type="password" name="repSenha" id="repSenha" placeholder="Repetir senha">
+                    <input type="password" name="repSenha" id="repSenha" placeholder="Repetir senha" required>
                 </p>
                 <p>
                     <button type="submit" name="cadastro" id="cadastro">Cadastre-se</button>
