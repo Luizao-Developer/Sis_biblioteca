@@ -15,7 +15,7 @@ $user = $stmt->fetch();
 // Verifica se o usuário foi encontrado e redireciona para a página principal se as credenciais estiverem corretas
 if ($user) {
   header('Location: ../usuario/Home.html');
-  exit;
+  exit();
 } else {
   // Exibe uma mensagem de erro se as credenciais estiverem incorretas
   echo 'Usuário ou senha incorretos.';
@@ -26,5 +26,6 @@ if ($user) {
 session_start();
 
 // Cria uma variável de sessão para armazenar as informações do usuário
-$_SESSION['user_id'] = $user['id'];
-$_SESSION['username'] = $user['username'];
+$_SESSION['codigo'] = $user['codigo'];
+$_SESSION['nome'] = $user['nome'];
+$_SESSION['email'] = $user['email'];
