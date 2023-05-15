@@ -38,7 +38,8 @@ try {
     
 
     $stmt->execute();
-    echo "Registro inserido com sucesso!";
+    header('Location: ../usuario/Home.html');
+    exit();
 } catch (PDOException $e) {
     echo "Erro ao executar consulta: " . $e->getMessage();
 }

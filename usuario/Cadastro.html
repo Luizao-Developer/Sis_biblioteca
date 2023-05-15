@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h1>C a d a s t r o</h1>
-        <form action="../PHPusuario/Cadastro.php" method="post">
+        <form action="../PHPusuario/Cadastro.php" method="post" onsubmit="return verificandoDuplicidadeEmail()">
                 <p>
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
@@ -35,3 +35,4 @@
     </div>
 </body>
 </html>
+<script src="../JSusuario/Cadastro.js"></script>
