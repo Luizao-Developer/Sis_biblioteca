@@ -7,6 +7,7 @@ function verificandoDuplicidadeEmail(){
 
     if(senha != repSenha){
         alert("As senhas não coincidem");
+       
         return false;
     }
     return true;
