@@ -7,7 +7,7 @@
     <title>Cadastro</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="../CSSusuario/cadastro.css">
+    <link rel="stylesheet" href="../CSSadmin/cadastro.css">
     <link rel="shortcut icon" href="../imgs/logotipo.png" type="image/x-icon">
     
 </head>
@@ -51,7 +51,7 @@
         $("#cadastro").on('click',function(){
             $.ajax({
                 type:'POST',
-                 url: '../PHPusuario/Cadastro.php',
+                 url: '../PHPadmin/Cadastro.php',
                  data: {
                     'nome': $('#nome').val(),
                     'email': $("#email").val(),

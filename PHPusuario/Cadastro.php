@@ -18,7 +18,7 @@ try {
 //Pegando os valores dos inputs do cadastro
 $nome = $_POST['nome'];
 $email = $_POST['email'];
-$senha = $_POST['repSenha'];
+$senha = $_POST['senha'];
 
 //Definindo a consulta a ser realizada no banco
 $query = "INSERT INTO usuario (nome, email, senha) VALUES (:nome, :email, :senha)";

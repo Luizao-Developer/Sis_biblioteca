@@ -1,0 +1,26 @@
+// Dados a serem enviados
+var data = {
+  nome: "João",
+  idade: 25
+};
+
+fetch('seu_script_php.php', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(data)
+})
+.then(function(response) {
+  if (response.ok) {
+    return response.text();
+  } else {
+    throw new Error('Erro na solicitação.');
+  }
+})
+.then(function(responseText) {
+  console.log(responseText);
+})
+.catch(function(error) {
+  console.log('Erro:', error.message);
+});
